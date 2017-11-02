@@ -55,6 +55,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>BD.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IAlumnos.cs" />
+    <Compile Include="Interfaces\ICalificaciones.cs" />
+    <Compile Include="Interfaces\IEncargado.cs" />
+    <Compile Include="Interfaces\IGrupo.cs" />
+    <Compile Include="Interfaces\IGrupo_Alumnos.cs" />
+    <Compile Include="Interfaces\IGrupo_Profesor.cs" />
+    <Compile Include="Interfaces\IMaterias.cs" />
+    <Compile Include="Interfaces\IProfesor.cs" />
+    <Compile Include="Interfaces\IRoles.cs" />
+    <Compile Include="Interfaces\IUsuarios.cs" />
+    <Compile Include="Metodos\MAlumnos.cs" />
+    <Compile Include="Metodos\MCalicaciones.cs" />
+    <Compile Include="Metodos\MEncargado.cs" />
+    <Compile Include="Metodos\MGrupo.cs" />
+    <Compile Include="Metodos\MGrupo_Alumnos.cs" />
+    <Compile Include="Metodos\MGrupo_Profesor.cs" />
+    <Compile Include="Metodos\MMaterias.cs" />
+    <Compile Include="Metodos\MProfesor.cs" />
+    <Compile Include="Metodos\Mroles.cs" />
+    <Compile Include="Metodos\MUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,11 +88,13 @@
       <Name>ES.DATA</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Metodos\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BD.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>BD.Designer.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
