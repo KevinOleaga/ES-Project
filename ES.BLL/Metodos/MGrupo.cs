@@ -9,29 +9,34 @@ namespace ES.BLL.Metodos
 {
     public class MGrupo : IGrupo
     {
+        private DAL.Interfaces.IGrupo gru;
+        public MGrupo()
+        {
+            gru = new DAL.Metodos.MGrupo();
+        }
         public void ActualizarGrupo(Grupo grupo)
         {
-            throw new NotImplementedException();
+            gru.ActualizarGrupo(grupo);
         }
 
         public Grupo BuscarGrupo(int idgrupo)
         {
-            throw new NotImplementedException();
+            return gru.BuscarGrupo(idgrupo);
         }
 
-        public Grupo BuscarGrupo(string grupo)
+        public Grupo BuscarGrupoNombre(string grupo)
         {
-            throw new NotImplementedException();
+            return gru.BuscarGrupo(grupo);
         }
 
         public void EliminarGrupo(int idgrupo)
         {
-            throw new NotImplementedException();
+            gru.EliminarGrupo(idgrupo);
         }
 
         public void InsertarGrupo(Grupo grupo)
         {
-            throw new NotImplementedException();
+            gru.InsertarGrupo(grupo);
         }
 
         public List<Grupo> ListarGrupo()

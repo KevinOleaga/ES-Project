@@ -9,29 +9,34 @@ namespace ES.BLL.Metodos
 {
     public class MProfesor : IProfesor
     {
+        private DAL.Interfaces.IProfesor profe;
+        public MProfesor()
+        {
+            profe = new DAL.Metodos.MProfesor();
+        }
         public void ActualizarProfesor(Profesor profesor)
         {
-            throw new NotImplementedException();
+            profe.ActualizarProfesor(profesor);
         }
 
         public void EliminarProfesor(int idProfesor)
         {
-            throw new NotImplementedException();
+            profe.EliminarProfesor(idProfesor);
         }
 
         public void InsertarProfesor(Profesor profesor)
         {
-            throw new NotImplementedException();
+            profe.InsertarProfesor(profesor);
         }
 
         public List<Profesor> ListaProfesor()
         {
-            throw new NotImplementedException();
+            return profe.ListaProfesor();
         }
 
         Profesor IProfesor.BuscarProfesor(int idProfesor)
         {
-            throw new NotImplementedException();
+            return profe.BuscarProfesor(idProfesor);
         }
     }
 }

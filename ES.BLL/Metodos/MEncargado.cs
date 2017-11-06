@@ -10,29 +10,34 @@ namespace ES.BLL.Metodos
 {
     public class MEncargado : IEncargado
     {
+        private DAL.Interfaces.IEncargado enca;
+        public MEncargado()
+        {
+            enca = new DAL.Metodos.MEncargado();
+        }
         public void ActualizarEncargado(Encargado encargado)
         {
-            throw new NotImplementedException();
+            enca.ActualizarEncargado(encargado);
         }
 
         public Encargado BuscarEncargado(int idEncargado)
         {
-            throw new NotImplementedException();
+            return enca.BuscarEncargado(idEncargado);
         }
 
         public void EliminarEncargado(int idEncargado)
         {
-            throw new NotImplementedException();
+            enca.EliminarEncargado(idEncargado);
         }
 
         public void InsertarEncargado(Encargado encargado)
         {
-            throw new NotImplementedException();
+            enca.InsertarEncargado(encargado);
         }
 
         public List<Encargado> ListaEncargado()
         {
-            throw new NotImplementedException();
+            return enca.ListaEncargado();
         }
     }
 }

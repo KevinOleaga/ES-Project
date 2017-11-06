@@ -31,7 +31,7 @@ namespace ES.DAL.Metodos
             return _db.Select<Materias>(x => x.IdMateria == idmaterias).FirstOrDefault();
         }
 
-        public Materias BuscarMaterias(string materias)
+        public Materias BuscarMateriasNombre(string materias)
         {
             return _db.Select<Materias>(x => x.Nombre == materias).FirstOrDefault();
         }

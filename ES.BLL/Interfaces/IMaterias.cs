@@ -17,6 +17,6 @@ namespace ES.BLL.Interfaces
         //DELETE
         void EliminarMaterias(int materias);
 
-        Materias BuscarMaterias(string materias);
+        Materias BuscarMateriasNombre(string materias);
     }
 }

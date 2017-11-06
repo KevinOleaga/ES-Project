@@ -9,34 +9,30 @@ namespace ES.BLL.Metodos
 {
     public class MUsuarios : IUsuarios
     {
-        public void ActualizarEncargado(Encargado encargado)
+        private DAL.Interfaces.IUsuarios usu;
+        public MUsuarios()
         {
-            throw new NotImplementedException();
+            usu = new DAL.Metodos.MUsuarios();
         }
-
         public void ActualizarUsuario(Usuarios usuarios)
         {
-            throw new NotImplementedException();
+            usu.ActualizarUsuario(usuarios);
         }
-
         public Usuarios BuscarUsuario(string usuario)
         {
-            throw new NotImplementedException();
+            return usu.BuscarUsuario(usuario);
         }
-
         public void EliminarUsuario(string usuario)
         {
-            throw new NotImplementedException();
+            usu.EliminarUsuario(usuario);
         }
-
         public void InsertarUsuario(Usuarios usuarios)
         {
-            throw new NotImplementedException();
+            usu.InsertarUsuario(usuarios);
         }
-
         public List<Usuarios> ListaUsuarios()
         {
-            throw new NotImplementedException();
+            return usu.ListaUsuarios();
         }
     }
 }

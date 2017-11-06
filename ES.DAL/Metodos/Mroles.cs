@@ -29,7 +29,7 @@ namespace ES.DAL.Metodos
             return _db.Select<Roles>(x => x.IdRol == idRoles).FirstOrDefault();
         }
 
-        public Roles BuscarRoles(string roles)
+        public Roles BuscarRolesNombre(string roles)
         {
             return _db.Select<Roles>(x => x.Rol==roles).FirstOrDefault();
         }

@@ -11,7 +11,7 @@ using System.Data;
 
 namespace ES.DAL.Metodos
 {
-    class MCalificaciones : ICalificaciones
+   public class MCalificaciones : ICalificaciones
     {
 
         private OrmLiteConnectionFactory _conexion;

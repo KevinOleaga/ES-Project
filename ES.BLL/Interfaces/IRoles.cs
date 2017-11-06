@@ -17,6 +17,6 @@ namespace ES.BLL.Interfaces
         //DELETE
         void EliminarRoles(int idroles);
 
-        Roles BuscarRoles(string roles);
+        Roles BuscarRolesNombre(string roles);
     }
 }

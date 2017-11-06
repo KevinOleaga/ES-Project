@@ -18,6 +18,6 @@ namespace ES.DAL.Interfaces
         //DELETE
         void EliminarMaterias(int materias);
 
-        Materias BuscarMaterias(string materias);
+        Materias BuscarMateriasNombre(string materias);
     }
 }

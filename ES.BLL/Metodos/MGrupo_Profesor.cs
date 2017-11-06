@@ -9,24 +9,29 @@ namespace ES.BLL.Metodos
 {
     public class MGrupo_Profesor : IGrupo_Profesor
     {
+        private DAL.Interfaces.IGrupo_Profesor gp;
+        public MGrupo_Profesor()
+        {
+            gp = new DAL.Metodos.MGrupo_Profesor();
+        }
         public void ActualizarGrupo_Profesor(Grupo_Profesor grupo_profesor)
         {
-            throw new NotImplementedException();
+            gp.ActualizarGrupo_Profesor(grupo_profesor);
         }
 
         public Grupo_Profesor BuscarGrupo_Profesor(int idgrupo)
         {
-            throw new NotImplementedException();
+            return gp.BuscarGrupo_Profesor(idgrupo);
         }
 
         public void EliminarGrupo_Profesor(int idgrupo)
         {
-            throw new NotImplementedException();
+            gp.EliminarGrupo_Profesor(idgrupo);
         }
 
         public void InsertarGrupo_Profesor(Grupo_Profesor grupo_profesor)
         {
-            throw new NotImplementedException();
+            gp.InsertarGrupo_Profesor(grupo_profesor);
         }
 
         public List<Grupo_Profesor> ListaGrupo_Profesor()

@@ -9,35 +9,39 @@ namespace ES.BLL.Metodos
 {
     public class MCalificaciones : ICalificaciones
     {
-      
+        private DAL.Interfaces.ICalificaciones calif;
+        public MCalificaciones()
+        {
+            calif = new DAL.Metodos.MCalificaciones();
+        }
         public void ActualizarCalificaciones(Calificaciones calificaciones)
         {
-            throw new NotImplementedException();
+            calif.ActualizarCalificaciones(calificaciones);
         }
 
         public Calificaciones BuscarCalificacionese(int idcalificaciones)
         {
-            throw new NotImplementedException();
+            return calif.BuscarCalificacionese(idcalificaciones);
         }
 
         public Calificaciones BuscarCalificacionesPorIdAlumnos(int idalumnos)
         {
-            throw new NotImplementedException();
+            return calif.BuscarCalificacionesPorIdAlumnos(idalumnos);
         }
 
         public Calificaciones BuscarCalificacionesPorIdMateria(int idmaterias)
         {
-            throw new NotImplementedException();
+            return calif.BuscarCalificacionesPorIdMateria(idmaterias);
         }
 
         public void EliminarCalificaciones(int idcalificaciones)
         {
-            throw new NotImplementedException();
+            calif.EliminarCalificaciones(idcalificaciones);
         }
 
         public void InsertarCalificaciones(Calificaciones calificaciones)
         {
-            throw new NotImplementedException();
+            calif.InsertarCalificaciones(calificaciones);
         }
 
         public List<Calificaciones> ListarCalificaciones()

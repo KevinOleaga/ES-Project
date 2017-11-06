@@ -9,34 +9,39 @@ namespace ES.BLL.Metodos
 {
     public class MRoles : IRoles
     {
+        private DAL.Interfaces.IRoles rol;
+        public MRoles()
+        {
+            rol= new DAL.Metodos.Mroles();
+        }
         public void ActualizarRoles(Roles roles)
         {
-            throw new NotImplementedException();
+            rol.ActualizarRoles(roles);
         }
 
         public Roles BuscarRoles(int idRoles)
         {
-            throw new NotImplementedException();
+            return rol.BuscarRoles(idRoles);
         }
 
-        public Roles BuscarRoles(string roles)
+        public Roles BuscarRolesNombre(string roles)
         {
-            throw new NotImplementedException();
+            return rol.BuscarRoles(roles);
         }
 
         public void EliminarRoles(int idroles)
         {
-            throw new NotImplementedException();
+            rol.EliminarRoles(idroles);
         }
 
         public void InsertarRoles(Roles roles)
         {
-            throw new NotImplementedException();
+            rol.InsertarRoles(roles);
         }
 
         public List<Roles> ListarRoles()
         {
-            throw new NotImplementedException();
+            return rol.ListarRoles();
         }
     }
 }

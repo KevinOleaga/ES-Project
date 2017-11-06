@@ -32,7 +32,7 @@ namespace ES.DAL.Metodos
                  .FirstOrDefault();
         }
 
-        public Grupo BuscarGrupo(string grupo)
+        public Grupo BuscarGrupoNombre(string grupo)
         {
             throw new NotImplementedException();
         }
