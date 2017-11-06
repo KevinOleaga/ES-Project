@@ -14,11 +14,6 @@ namespace ES.BLL.Metodos
             throw new NotImplementedException();
         }
 
-        public Encargado BuscarProfesor(int idProfesor)
-        {
-            throw new NotImplementedException();
-        }
-
         public void EliminarProfesor(int idProfesor)
         {
             throw new NotImplementedException();
@@ -30,6 +25,11 @@ namespace ES.BLL.Metodos
         }
 
         public List<Profesor> ListaProfesor()
+        {
+            throw new NotImplementedException();
+        }
+
+        Profesor IProfesor.BuscarProfesor(int idProfesor)
         {
             throw new NotImplementedException();
         }

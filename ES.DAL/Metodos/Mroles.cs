@@ -21,27 +21,27 @@ namespace ES.DAL.Metodos
         }
         public void ActualizarRoles(Roles roles)
         {
-            throw new NotImplementedException();
+            _db.Update(roles);
         }
 
         public Roles BuscarRoles(int idRoles)
         {
-            throw new NotImplementedException();
+            return _db.Select<Roles>(x => x.IdRol == idRoles).FirstOrDefault();
         }
 
         public Roles BuscarRoles(string roles)
         {
-            throw new NotImplementedException();
+            return _db.Select<Roles>(x => x.Rol==roles).FirstOrDefault();
         }
 
         public void EliminarRoles(int idroles)
         {
-            throw new NotImplementedException();
+            _db.Delete<Roles>(x => x.IdRol == idroles);
         }
 
         public void InsertarRoles(Roles roles)
         {
-            throw new NotImplementedException();
+            _db.Insert(roles);
         }
 
         public List<Roles> ListarRoles()

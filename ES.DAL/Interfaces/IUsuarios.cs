@@ -8,14 +8,14 @@ namespace ES.DAL.Interfaces
 {
    public interface IUsuarios
     {
-        List<Encargado> ListaEncargado();
+        List<Usuarios> ListaUsuarios();
         // Select por PK
-        Encargado BuscarEncargado(int idEncargado);
+        Usuarios BuscarUsuario(string usuario);
         // Insert
-        void InsertarEncargado(Encargado encargado);
+        void InsertarUsuario(Usuarios usuarios);
         // Update
-        void ActualizarEncargado(Encargado encargado);
+        void ActualizarUsuario(Usuarios usuarios);
         // Delete
-        void EliminarEncargado(int idEncargado);
+        void EliminarUsuario(string usuario);
     }
 }

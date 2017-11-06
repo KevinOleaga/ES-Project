@@ -9,34 +9,41 @@ namespace ES.BLL.Metodos
 {
     public class MAlumnos : IAlumnos
     {
+        private DAL.Interfaces.IAlumnos alu;
+        public MAlumnos()
+        {
+            alu = new DAL.Metodos.MAlumnos();
+        }
         public void ActualizarAlumnos(Alumnos alumnos)
         {
-            throw new NotImplementedException();
+            alu.ActualizarAlumnos(alumnos);
         }
 
         public Alumnos BuscarAlumnos(int idAlumnos)
         {
-            throw new NotImplementedException();
+           return alu.BuscarAlumnos(idAlumnos);
         }
 
         public void EliminarAlumnos(int idAlumnos)
         {
-            throw new NotImplementedException();
+            alu.EliminarAlumnos(idAlumnos);
         }
 
         public void InsertarAlumnos(Alumnos alumnos)
         {
-            throw new NotImplementedException();
+            alu.InsertarAlumnos(alumnos);
         }
 
         public List<Alumnos> ListaAlumnos()
         {
-            throw new NotImplementedException();
+            return alu.ListaAlumnos();
         }
 
-        public List<Alumnos> ListarProductos(int idCalificaciones)
+        public List<Alumnos> ListarAlumnos(int idCalificaciones)
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }

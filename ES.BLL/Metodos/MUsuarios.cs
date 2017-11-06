@@ -14,22 +14,27 @@ namespace ES.BLL.Metodos
             throw new NotImplementedException();
         }
 
-        public Encargado BuscarEncargado(int idEncargado)
+        public void ActualizarUsuario(Usuarios usuarios)
         {
             throw new NotImplementedException();
         }
 
-        public void EliminarEncargado(int idEncargado)
+        public Usuarios BuscarUsuario(string usuario)
         {
             throw new NotImplementedException();
         }
 
-        public void InsertarEncargado(Encargado encargado)
+        public void EliminarUsuario(string usuario)
         {
             throw new NotImplementedException();
         }
 
-        public List<Encargado> ListaEncargado()
+        public void InsertarUsuario(Usuarios usuarios)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Usuarios> ListaUsuarios()
         {
             throw new NotImplementedException();
         }

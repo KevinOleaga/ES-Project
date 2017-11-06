@@ -12,7 +12,7 @@ namespace ES.DATA
         public string Username { get; set; }
 
         public int Password { get; set; }
-        [AutoIncrement]
+       
         public int IdRol { get; set; }
 
         public int IntentosFallidos { get; set; }

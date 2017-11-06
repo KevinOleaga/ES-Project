@@ -22,22 +22,23 @@ namespace ES.DAL.Metodos
         }
         public void ActualizarEncargado(Encargado encargado)
         {
-            throw new NotImplementedException();
+            _db.Update(encargado);
         }
 
         public Encargado BuscarEncargado(int idEncargado)
         {
-            throw new NotImplementedException();
+            return _db.Select<Encargado>(x => x.IdEncargado == idEncargado)
+                 .FirstOrDefault();
         }
 
         public void EliminarEncargado(int idEncargado)
         {
-            throw new NotImplementedException();
+            _db.Delete<Encargado>(x => x.IdEncargado == idEncargado);
         }
 
         public void InsertarEncargado(Encargado encargado)
         {
-            throw new NotImplementedException();
+            _db.Insert(encargado);
         }
 
         public List<Encargado> ListaEncargado()

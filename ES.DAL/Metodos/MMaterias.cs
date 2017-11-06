@@ -23,27 +23,27 @@ namespace ES.DAL.Metodos
         }
         public void ActualizarMaterias(Materias materias)
         {
-            throw new NotImplementedException();
+            _db.Update(materias);
         }
 
         public Materias BuscarMaterias(int idmaterias)
         {
-            throw new NotImplementedException();
+            return _db.Select<Materias>(x => x.IdMateria == idmaterias).FirstOrDefault();
         }
 
         public Materias BuscarMaterias(string materias)
         {
-            throw new NotImplementedException();
+            return _db.Select<Materias>(x => x.Nombre == materias).FirstOrDefault();
         }
 
         public void EliminarMaterias(int materias)
         {
-            throw new NotImplementedException();
+            _db.Delete<Materias>(x => x.IdMateria == materias);
         }
 
         public void InsertarMaterias(Materias materias)
         {
-            throw new NotImplementedException();
+            _db.Insert(materias);
         }
 
         public List<Materias> ListarMaterias()

@@ -23,12 +23,13 @@ namespace ES.DAL.Metodos
         }
         public void ActualizarGrupo(Grupo grupo)
         {
-            throw new NotImplementedException();
+            _db.Update(grupo);
         }
 
         public Grupo BuscarGrupo(int idgrupo)
         {
-            throw new NotImplementedException();
+            return _db.Select<Grupo>(x => x.IdGrupo == idgrupo)
+                 .FirstOrDefault();
         }
 
         public Grupo BuscarGrupo(string grupo)
@@ -38,12 +39,12 @@ namespace ES.DAL.Metodos
 
         public void EliminarGrupo(int idgrupo)
         {
-            throw new NotImplementedException();
+            _db.Delete<Grupo>(x => x.IdGrupo == idgrupo);
         }
 
         public void InsertarGrupo(Grupo grupo)
         {
-            throw new NotImplementedException();
+            _db.Insert(grupo);
         }
 
         public List<Grupo> ListarGrupo()

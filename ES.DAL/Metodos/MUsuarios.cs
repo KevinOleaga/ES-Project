@@ -20,27 +20,28 @@ namespace ES.DAL.Metodos
             _conexion = new OrmLiteConnectionFactory(BD.Default.conexion, SqlServerDialect.Provider);
             _db = _conexion.Open();
         }
-        public void ActualizarEncargado(Encargado encargado)
+
+        public void ActualizarUsuario(Usuarios usuarios)
         {
-            throw new NotImplementedException();
+            _db.Update(usuarios);
         }
 
-        public Encargado BuscarEncargado(int idEncargado)
+        public Usuarios BuscarUsuario(string usuario)
         {
-            throw new NotImplementedException();
+            return _db.Select<Usuarios>(x => x.Username == usuario).FirstOrDefault();
         }
 
-        public void EliminarEncargado(int idEncargado)
+        public void EliminarUsuario(string usuario)
         {
-            throw new NotImplementedException();
+            _db.Delete<Usuarios>(x => x.Username == usuario);
         }
 
-        public void InsertarEncargado(Encargado encargado)
+        public void InsertarUsuario(Usuarios usuarios)
         {
-            throw new NotImplementedException();
+            _db.Insert(usuarios);
         }
 
-        public List<Encargado> ListaEncargado()
+        public List<Usuarios> ListaUsuarios()
         {
             throw new NotImplementedException();
         }

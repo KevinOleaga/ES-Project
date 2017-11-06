@@ -10,7 +10,7 @@ namespace ES.BLL.Interfaces
     {
         List<Profesor> ListaProfesor();
         // Select por PK
-        Encargado BuscarProfesor(int idProfesor);
+        Profesor BuscarProfesor(int idProfesor);
         // Insert
         void InsertarProfesor(Profesor profesor);
         // Update

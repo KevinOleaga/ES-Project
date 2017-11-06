@@ -23,22 +23,23 @@ namespace ES.DAL.Metodos
     }
         public void ActualizarGrupo_Alumnos(Grupo_Alumnos grupo_alumnos)
         {
-            throw new NotImplementedException();
+            _db.Update(grupo_alumnos);
         }
 
         public Grupo_Alumnos BuscarGrupo_Alumnos(int idgrupo)
         {
-            throw new NotImplementedException();
+            return _db.Select<Grupo_Alumnos>(x => x.IdGrupo == idgrupo)
+                .FirstOrDefault();
         }
 
         public void EliminarGrupo_Alumnos(int idgrupo)
         {
-            throw new NotImplementedException();
+            _db.Delete<Grupo_Alumnos>(x => x.IdGrupo == idgrupo);
         }
 
         public void InsertarGrupo_Alumnos(Grupo_Alumnos grupo_alumnos)
         {
-            throw new NotImplementedException();
+            _db.Insert(grupo_alumnos);
         }
 
         public List<Grupo_Alumnos> ListaGrupo_Alumnos()

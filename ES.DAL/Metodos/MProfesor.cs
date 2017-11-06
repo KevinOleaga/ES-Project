@@ -23,22 +23,22 @@ namespace ES.DAL.Metodos
         }
         public void ActualizarProfesor(Profesor profesor)
         {
-            throw new NotImplementedException();
+            _db.Update(profesor);
         }
 
-        public Encargado BuscarProfesor(int idProfesor)
+        public Profesor BuscarProfesor(int idProfesor)
         {
-            throw new NotImplementedException();
+           return _db.Select<Profesor>(x => x.IdProfesor == idProfesor).FirstOrDefault();
         }
 
         public void EliminarProfesor(int idProfesor)
         {
-            throw new NotImplementedException();
+            _db.Delete<Profesor>(x => x.IdProfesor == idProfesor);
         }
 
         public void InsertarProfesor(Profesor profesor)
         {
-            throw new NotImplementedException();
+            _db.Insert(profesor);
         }
 
         public List<Profesor> ListaProfesor()

@@ -11,45 +11,48 @@ using System.Data;
 
 namespace ES.DAL.Metodos
 {
-    class MCalicaciones : ICalificaciones
+    class MCalificaciones : ICalificaciones
     {
 
         private OrmLiteConnectionFactory _conexion;
         private IDbConnection _db;
 
-        public MCalicaciones()
+        public MCalificaciones()
         {
             _conexion = new OrmLiteConnectionFactory(BD.Default.conexion, SqlServerDialect.Provider);
             _db = _conexion.Open();
         }
         public void ActualizarCalificaciones(Calificaciones calificaciones)
         {
-            throw new NotImplementedException();
+            _db.Update(calificaciones);
         }
 
         public Calificaciones BuscarCalificacionese(int idcalificaciones)
         {
-            throw new NotImplementedException();
+            return _db.Select<Calificaciones>(x => x.IdCalificaciones == idcalificaciones)
+                .FirstOrDefault();
         }
 
         public Calificaciones BuscarCalificacionesPorIdAlumnos(int idalumnos)
         {
-            throw new NotImplementedException();
+            return _db.Select<Calificaciones>(x => x.idAlumno == idalumnos)
+                .FirstOrDefault();
         }
 
         public Calificaciones BuscarCalificacionesPorIdMateria(int idmaterias)
         {
-            throw new NotImplementedException();
+            return _db.Select<Calificaciones>(x => x.IdMateria == idmaterias)
+                .FirstOrDefault();
         }
 
         public void EliminarCalificaciones(int idcalificaciones)
         {
-            throw new NotImplementedException();
+            _db.Delete<Calificaciones>(x => x.IdCalificaciones == idcalificaciones);
         }
 
         public void InsertarCalificaciones(Calificaciones calificaciones)
         {
-            throw new NotImplementedException();
+            _db.Insert(calificaciones);
         }
 
         public List<Calificaciones> ListarCalificaciones()

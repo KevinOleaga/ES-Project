@@ -19,8 +19,8 @@ namespace ES.BLL.Interfaces
             void ActualizarAlumnos(Alumnos alumnos);
             // Delete
             void EliminarAlumnos(int idAlumnos);
-            //buscar productos por categorias
-            List<Alumnos> ListarProductos(int idCalificaciones);
-        
+        //buscar productos por categorias
+        List<Alumnos> ListarAlumnos(int idCalificaciones);
+
     }
 }

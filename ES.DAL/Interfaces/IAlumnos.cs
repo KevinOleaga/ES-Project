@@ -19,6 +19,6 @@ namespace ES.DAL.Interfaces
         // Delete
         void EliminarAlumnos(int idAlumnos);
         //buscar productos por categorias
-        List<Alumnos> ListarProductos(int idCalificaciones);
+        List<Alumnos> ListarAlumnos(int idCalificaciones);
     }
 }
