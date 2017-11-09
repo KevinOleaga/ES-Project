@@ -17,7 +17,5 @@ namespace ES.DAL.Interfaces
         void ActualizarMaterias(Materias materias);
         //DELETE
         void EliminarMaterias(int materias);
-
-        Materias BuscarMateriasNombre(string materias);
     }
 }

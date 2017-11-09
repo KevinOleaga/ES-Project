@@ -18,6 +18,5 @@ namespace ES.DAL.Interfaces
         //DELETE
         void EliminarGrupo(int idgrupo);
 
-        Grupo BuscarGrupoNombre(string grupo);
     }
 }

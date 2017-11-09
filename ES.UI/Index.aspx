@@ -59,7 +59,7 @@
                     <div class="collapse" id="adm_alumnos">
                         <ul class="nav">
                             <li>
-                                <a href="BuscarEstudiante.aspx">
+                                <a href="BuscarEstudiantes.aspx">
                                     <span class="sidebar-mini fa fa-search"></span>
                                     <span class="sidebar-normal">Buscar</span>
                                 </a>
@@ -84,6 +84,45 @@
                             </li>
                         </ul>
                     </div>
+                 
+                    <a data-toggle="collapse" href="#adm_encargados">
+                        <i class="fa fa-sliders"></i>
+                        <p>
+                            ADM. ENCARGADOS
+       					    <b class="caret"></b>
+                        </p>
+                    </a>
+                       <li>
+                     <div class="collapse" id="adm_encargados">
+                        <ul class="nav">
+                            <li>
+                                <a href="BuscarEncargado.aspx">
+                                    <span class="sidebar-mini fa fa-search"></span>
+                                    <span class="sidebar-normal">Buscar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="CrearEncargado.aspx">
+                                    <span class="sidebar-mini fa fa-plus"></span>
+                                    <span class="sidebar-normal">Crear</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="EditarEncargado.aspx">
+                                    <span class="sidebar-mini fa fa-pencil"></span>
+                                    <span class="sidebar-normal">Editar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="EliminarEncargado.aspx">
+                                    <span class="sidebar-mini fa fa-trash-o"></span>
+                                    <span class="sidebar-normal">Eliminar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </li>
                 <li>
                     <a data-toggle="collapse" href="#adm_profesores">

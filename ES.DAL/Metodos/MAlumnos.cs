@@ -25,15 +25,45 @@ namespace ES.DAL.Metodos
             _db.Update(alumnos);
         }
 
-        public Alumnos BuscarAlumnos(int idAlumnos)
+        public Alumnos BuscarAlumnos(string cedula)
         {
-            return _db.Select<Alumnos>(x => x.IdAlumno == idAlumnos)
+            return _db.Select<Alumnos>(x => x.Cedula == cedula)
                .FirstOrDefault();
         }
 
         public void EliminarAlumnos(int idAlumnos)
         {
             _db.Delete<Alumnos>(x => x.IdAlumno == idAlumnos);
+        }
+
+        public bool ExisteAlumno(string cedula)
+        {
+            try
+            {
+                Alumnos Alu = _db.Select<Alumnos>(x => x.Cedula == cedula).FirstOrDefault();
+
+                if (Alu.Cedula == cedula)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                if (ex.Message == "Referencia a objeto no establecida como instancia de un objeto.")
+                {
+                    return false;
+                }
+                else
+                {
+                    return false;
+                }
+            }
         }
 
         public void InsertarAlumnos(Alumnos alumnos)

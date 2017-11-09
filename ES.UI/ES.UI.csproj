@@ -110,6 +110,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BuscarEstudiantes.aspx" />
+    <Content Include="CrearEstudiante.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -117,6 +119,7 @@
     <Content Include="Content\login.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\themify-icons.css" />
+    <Content Include="EditarEstudiante.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\logo.png" />
@@ -174,6 +177,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarEstudiantes.aspx.cs">
+      <DependentUpon>BuscarEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarEstudiantes.aspx.designer.cs">
+      <DependentUpon>BuscarEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearEstudiante.aspx.cs">
+      <DependentUpon>CrearEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearEstudiante.aspx.designer.cs">
+      <DependentUpon>CrearEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEstudiante.aspx.cs">
+      <DependentUpon>EditarEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarEstudiante.aspx.designer.cs">
+      <DependentUpon>EditarEstudiante.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,6 +227,7 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Utilidades.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

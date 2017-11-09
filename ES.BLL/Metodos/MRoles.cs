@@ -14,34 +14,35 @@ namespace ES.BLL.Metodos
         {
             rol= new DAL.Metodos.Mroles();
         }
+
         public void ActualizarRoles(Roles roles)
         {
-            rol.ActualizarRoles(roles);
+            throw new NotImplementedException();
         }
 
         public Roles BuscarRoles(int idRoles)
         {
-            return rol.BuscarRoles(idRoles);
+            throw new NotImplementedException();
         }
 
         public Roles BuscarRolesNombre(string roles)
         {
-            return rol.BuscarRoles(roles);
+            throw new NotImplementedException();
         }
 
         public void EliminarRoles(int idroles)
         {
-            rol.EliminarRoles(idroles);
+            throw new NotImplementedException();
         }
 
         public void InsertarRoles(Roles roles)
         {
-            rol.InsertarRoles(roles);
+            throw new NotImplementedException();
         }
 
         public List<Roles> ListarRoles()
         {
-            return rol.ListarRoles();
+            throw new NotImplementedException();
         }
     }
 }
