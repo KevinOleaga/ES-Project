@@ -19,14 +19,19 @@ namespace ES.BLL.Metodos
             alu.ActualizarAlumnos(alumnos);
         }
 
-        public Alumnos BuscarAlumnos(int idAlumnos)
+        public Alumnos BuscarAlumnos(string cedula)
         {
-           return alu.BuscarAlumnos(idAlumnos);
+           return alu.BuscarAlumnos(cedula);
         }
 
         public void EliminarAlumnos(int idAlumnos)
         {
             alu.EliminarAlumnos(idAlumnos);
+        }
+
+        public bool ExisteAlumno(string cedula)
+        {
+            return alu.ExisteAlumno(cedula);
         }
 
         public void InsertarAlumnos(Alumnos alumnos)

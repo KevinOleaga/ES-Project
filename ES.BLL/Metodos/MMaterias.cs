@@ -14,34 +14,35 @@ namespace ES.BLL.Metodos
         {
             mate = new DAL.Metodos.MMaterias();
         }
+
         public void ActualizarMaterias(Materias materias)
         {
-            mate.ActualizarMaterias(materias);
+            throw new NotImplementedException();
         }
 
         public Materias BuscarMaterias(int idmaterias)
         {
-          return mate.BuscarMaterias(idmaterias);
+            throw new NotImplementedException();
         }
 
         public Materias BuscarMateriasNombre(string materias)
         {
-            return mate.BuscarMaterias(materias);
+            throw new NotImplementedException();
         }
 
         public void EliminarMaterias(int materias)
         {
-            mate.EliminarMaterias(materias);
+            throw new NotImplementedException();
         }
 
         public void InsertarMaterias(Materias materias)
         {
-            mate.InsertarMaterias(materias);
+            throw new NotImplementedException();
         }
 
         public List<Materias> ListarMaterias()
         {
-            return mate.ListarMaterias();
+            throw new NotImplementedException();
         }
     }
 }

@@ -18,6 +18,5 @@ namespace ES.DAL.Interfaces
         //DELETE
         void EliminarRoles(int idroles);
 
-        Roles BuscarRolesNombre(string roles);
     }
 }

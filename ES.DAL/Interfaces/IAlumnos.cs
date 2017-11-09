@@ -11,7 +11,7 @@ namespace ES.DAL.Interfaces
     {
         List<Alumnos> ListaAlumnos();
         // Select por PK
-        Alumnos BuscarAlumnos(int idAlumnos);
+        Alumnos BuscarAlumnos(string cedula);
         // Insert
         void InsertarAlumnos(Alumnos alumnos);
         // Update
@@ -20,5 +20,6 @@ namespace ES.DAL.Interfaces
         void EliminarAlumnos(int idAlumnos);
         //buscar productos por categorias
         List<Alumnos> ListarAlumnos(int idCalificaciones);
+        bool ExisteAlumno(string cedula);
     }
 }

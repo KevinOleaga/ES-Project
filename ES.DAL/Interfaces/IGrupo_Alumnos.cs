@@ -19,4 +19,3 @@ namespace ES.DAL.Interfaces
         void EliminarGrupo_Alumnos(int idgrupo);
     }
 }
-}

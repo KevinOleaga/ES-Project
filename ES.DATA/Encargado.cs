@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceStack.DataAnnotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,10 @@ namespace ES.DATA
 {
     public class Encargado
     {
+        [AutoIncrement]
         public int IdEncargado { get; set; }
+
+        public string Cedula { get; set; }
 
         public string Nombre { get; set; }
 
