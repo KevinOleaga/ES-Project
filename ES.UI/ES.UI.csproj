@@ -110,6 +110,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BuscarEncargado.aspx" />
     <Content Include="BuscarEstudiantes.aspx" />
     <Content Include="CrearEstudiante.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -119,12 +120,14 @@
     <Content Include="Content\login.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\themify-icons.css" />
+    <Content Include="EditarEncargado.aspx" />
     <Content Include="EditarEstudiante.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\profile.png" />
     <Content Include="Index.aspx" />
+    <Content Include="InsertarEncargado.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -177,6 +180,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarEncargado.aspx.cs">
+      <DependentUpon>BuscarEncargado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarEncargado.aspx.designer.cs">
+      <DependentUpon>BuscarEncargado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BuscarEstudiantes.aspx.cs">
       <DependentUpon>BuscarEstudiantes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +201,13 @@
     <Compile Include="CrearEstudiante.aspx.designer.cs">
       <DependentUpon>CrearEstudiante.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditarEncargado.aspx.cs">
+      <DependentUpon>EditarEncargado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarEncargado.aspx.designer.cs">
+      <DependentUpon>EditarEncargado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditarEstudiante.aspx.cs">
       <DependentUpon>EditarEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,6 +221,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarEncargado.aspx.cs">
+      <DependentUpon>InsertarEncargado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarEncargado.aspx.designer.cs">
+      <DependentUpon>InsertarEncargado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

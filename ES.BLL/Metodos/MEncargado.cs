@@ -20,9 +20,9 @@ namespace ES.BLL.Metodos
             enca.ActualizarEncargado(encargado);
         }
 
-        public Encargado BuscarEncargado(int idEncargado)
+        public Encargado BuscarEncargado(string cedula)
         {
-            return enca.BuscarEncargado(idEncargado);
+            return enca.BuscarEncargado(cedula);
         }
 
         public void EliminarEncargado(int idEncargado)

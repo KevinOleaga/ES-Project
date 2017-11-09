@@ -10,7 +10,7 @@ namespace ES.DAL.Interfaces
     {
         List<Encargado> ListaEncargado();
         // Select por PK
-        Encargado BuscarEncargado(int idEncargado);
+        Encargado BuscarEncargado(string cedula);
         // Insert
         void InsertarEncargado(Encargado encargado);
         // Update

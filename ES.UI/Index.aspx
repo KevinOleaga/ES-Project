@@ -102,7 +102,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="CrearEncargado.aspx">
+                                <a href="InsertarEncargado.aspx">
                                     <span class="sidebar-mini fa fa-plus"></span>
                                     <span class="sidebar-normal">Crear</span>
                                 </a>

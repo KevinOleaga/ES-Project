@@ -25,9 +25,9 @@ namespace ES.DAL.Metodos
             _db.Update(encargado);
         }
 
-        public Encargado BuscarEncargado(int idEncargado)
+        public Encargado BuscarEncargado(string cedula)
         {
-            return _db.Select<Encargado>(x => x.IdEncargado == idEncargado)
+            return _db.Select<Encargado>(x => x.Cedula == cedula)
                  .FirstOrDefault();
         }
 
@@ -43,7 +43,8 @@ namespace ES.DAL.Metodos
 
         public List<Encargado> ListaEncargado()
         {
-            throw new NotImplementedException();
+            return _db.Select<Encargado>();
         }
+    
     }
 }
