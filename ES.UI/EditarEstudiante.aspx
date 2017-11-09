@@ -77,7 +77,7 @@
                <div class="form-inline">
                     <br /><br />
     <asp:Label ID="lbAñoGraduacion" runat="server" Text="Año de Graduación"></asp:Label>
-    <asp:TextBox ID="txtAñoGraduacion" CssClass="form-control" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtAñoGraduacion" CssClass="form-control" runat="server"> </asp:TextBox>
 
         </div>
 
