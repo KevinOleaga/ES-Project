@@ -32,11 +32,6 @@ namespace ES.DAL.Metodos
                  .FirstOrDefault();
         }
 
-        public Grupo BuscarGrupoNombre(string grupo)
-        {
-            throw new NotImplementedException();
-        }
-
         public void EliminarGrupo(int idgrupo)
         {
             _db.Delete<Grupo>(x => x.IdGrupo == idgrupo);
@@ -49,7 +44,7 @@ namespace ES.DAL.Metodos
 
         public List<Grupo> ListarGrupo()
         {
-            throw new NotImplementedException();
+            return _db.Select<Grupo>();
         }
     }
 }

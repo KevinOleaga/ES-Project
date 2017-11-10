@@ -17,32 +17,26 @@ namespace ES.BLL.Metodos
 
         public void ActualizarGrupo(Grupo grupo)
         {
-            throw new NotImplementedException();
+            gru.ActualizarGrupo(grupo);
         }
 
         public Grupo BuscarGrupo(int idgrupo)
         {
-            throw new NotImplementedException();
+            return gru.BuscarGrupo(idgrupo);
         }
-
-        public Grupo BuscarGrupoNombre(string grupo)
-        {
-            throw new NotImplementedException();
-        }
-
         public void EliminarGrupo(int idgrupo)
         {
-            throw new NotImplementedException();
+            gru.EliminarGrupo(idgrupo);
         }
 
         public void InsertarGrupo(Grupo grupo)
         {
-            throw new NotImplementedException();
+            gru.InsertarGrupo(grupo);
         }
 
         public List<Grupo> ListarGrupo()
         {
-            throw new NotImplementedException();
+            return gru.ListarGrupo();
         }
     }
 }

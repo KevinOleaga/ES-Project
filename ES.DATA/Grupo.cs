@@ -9,7 +9,7 @@ namespace ES.DATA
 {
     public class Grupo
     {
-        
+        [AutoIncrement]
         public int IdGrupo { get; set; }
 
         public string Aula { get; set; }

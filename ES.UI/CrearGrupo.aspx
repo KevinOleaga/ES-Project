@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Login.Master" AutoEventWireup="true" CodeBehind="CrearMaterias.aspx.cs" Inherits="ES.UI.CrearMaterias" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CrearGrupo.aspx.cs" Inherits="ES.UI.CrearGrupo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     <div class="alert alert-success" visible="false"  id="mensaje" runat="server">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
@@ -16,8 +16,8 @@
            <div class="form-inline col-sm-offset-2">
         <div class="form-inline">
     <div class="form-inline">
-    <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
-    <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server"></asp:TextBox>
+    <asp:Label ID="lblNombre" runat="server" Text=""></asp:Label>
+    <asp:TextBox ID="txtAula" CssClass="form-control" runat="server"></asp:TextBox>
         </div>
              </div>
                 </div>

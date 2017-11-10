@@ -16,7 +16,5 @@ namespace ES.BLL.Interfaces
         void ActualizarGrupo(Grupo grupo);
         //DELETE
         void EliminarGrupo(int idgrupo);
-
-        Grupo BuscarGrupoNombre(string grupo);
     }
 }

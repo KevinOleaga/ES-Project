@@ -112,6 +112,7 @@
   <ItemGroup>
     <Content Include="BuscarEncargado.aspx" />
     <Content Include="BuscarEstudiantes.aspx" />
+    <Content Include="BuscarGrupo.aspx" />
     <Content Include="BuscarMaterias.aspx" />
     <Content Include="CrearEstudiante.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -121,9 +122,11 @@
     <Content Include="Content\login.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\themify-icons.css" />
+    <Content Include="CrearGrupo.aspx" />
     <Content Include="CrearMaterias.aspx" />
     <Content Include="EditarEncargado.aspx" />
     <Content Include="EditarEstudiante.aspx" />
+    <Content Include="EditarGrupo.aspx" />
     <Content Include="EditarMaterias.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\bg.jpg" />
@@ -197,6 +200,13 @@
     <Compile Include="BuscarEstudiantes.aspx.designer.cs">
       <DependentUpon>BuscarEstudiantes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BuscarGrupo.aspx.cs">
+      <DependentUpon>BuscarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarGrupo.aspx.designer.cs">
+      <DependentUpon>BuscarGrupo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BuscarMaterias.aspx.cs">
       <DependentUpon>BuscarMaterias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -210,6 +220,13 @@
     </Compile>
     <Compile Include="CrearEstudiante.aspx.designer.cs">
       <DependentUpon>CrearEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearGrupo.aspx.cs">
+      <DependentUpon>CrearGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearGrupo.aspx.designer.cs">
+      <DependentUpon>CrearGrupo.aspx</DependentUpon>
     </Compile>
     <Compile Include="CrearMaterias.aspx.cs">
       <DependentUpon>CrearMaterias.aspx</DependentUpon>
@@ -231,6 +248,13 @@
     </Compile>
     <Compile Include="EditarEstudiante.aspx.designer.cs">
       <DependentUpon>EditarEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarGrupo.aspx.cs">
+      <DependentUpon>EditarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarGrupo.aspx.designer.cs">
+      <DependentUpon>EditarGrupo.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarMaterias.aspx.cs">
       <DependentUpon>EditarMaterias.aspx</DependentUpon>
