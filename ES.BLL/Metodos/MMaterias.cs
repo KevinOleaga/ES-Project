@@ -17,32 +17,27 @@ namespace ES.BLL.Metodos
 
         public void ActualizarMaterias(Materias materias)
         {
-            throw new NotImplementedException();
+            mate.ActualizarMaterias(materias);
         }
 
         public Materias BuscarMaterias(int idmaterias)
         {
-            throw new NotImplementedException();
-        }
-
-        public Materias BuscarMateriasNombre(string materias)
-        {
-            throw new NotImplementedException();
+            return mate.BuscarMaterias(idmaterias);
         }
 
         public void EliminarMaterias(int materias)
         {
-            throw new NotImplementedException();
+            mate.EliminarMaterias(materias);
         }
 
         public void InsertarMaterias(Materias materias)
         {
-            throw new NotImplementedException();
+            mate.InsertarMaterias(materias);
         }
 
         public List<Materias> ListarMaterias()
         {
-            throw new NotImplementedException();
+           return mate.ListarMaterias();
         }
     }
 }

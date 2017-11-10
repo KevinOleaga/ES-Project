@@ -199,6 +199,41 @@
                     </div>
                 </li>
                 <li>
+                 <a data-toggle="collapse" href="#adm_materias">
+                        <i class="fa fa-sliders"></i>
+                        <p>
+                            ADM. MATERIAS
+       					    <b class="caret"></b>
+                        </p>
+                    </a>
+                       <li>
+                     <div class="collapse" id="adm_materias">
+                        <ul class="nav">
+                            <li>
+                                <a href="BuscarMaterias.aspx">
+                                    <span class="sidebar-mini fa fa-search"></span>
+                                    <span class="sidebar-normal">Buscar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="CrearMaterias.aspx">
+                                    <span class="sidebar-mini fa fa-plus"></span>
+                                    <span class="sidebar-normal">Crear</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="EditarMaterias.aspx">
+                                    <span class="sidebar-mini fa fa-pencil"></span>
+                                    <span class="sidebar-normal">Editar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="EliminarMaterias.aspx">
+                                    <span class="sidebar-mini fa fa-trash-o"></span>
+                                    <span class="sidebar-normal">Eliminar</span>
+                                </a>
+                            </li>
+                <li>
                     <a href="Herramientaas.aspx">
                         <i class="fa fa-wrench"></i>
                         <p>HERRAMIENTAS</p>

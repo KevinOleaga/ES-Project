@@ -31,11 +31,6 @@ namespace ES.DAL.Metodos
             return _db.Select<Materias>(x => x.IdMateria == idmaterias).FirstOrDefault();
         }
 
-        public Materias BuscarMateriasNombre(string materias)
-        {
-            return _db.Select<Materias>(x => x.Nombre == materias).FirstOrDefault();
-        }
-
         public void EliminarMaterias(int materias)
         {
             _db.Delete<Materias>(x => x.IdMateria == materias);
@@ -48,7 +43,7 @@ namespace ES.DAL.Metodos
 
         public List<Materias> ListarMaterias()
         {
-            throw new NotImplementedException();
+            return _db.Select<Materias>();
         }
     }
 }

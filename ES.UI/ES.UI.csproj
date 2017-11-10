@@ -112,6 +112,7 @@
   <ItemGroup>
     <Content Include="BuscarEncargado.aspx" />
     <Content Include="BuscarEstudiantes.aspx" />
+    <Content Include="BuscarMaterias.aspx" />
     <Content Include="CrearEstudiante.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -120,8 +121,10 @@
     <Content Include="Content\login.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\themify-icons.css" />
+    <Content Include="CrearMaterias.aspx" />
     <Content Include="EditarEncargado.aspx" />
     <Content Include="EditarEstudiante.aspx" />
+    <Content Include="EditarMaterias.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\logo.png" />
@@ -194,12 +197,26 @@
     <Compile Include="BuscarEstudiantes.aspx.designer.cs">
       <DependentUpon>BuscarEstudiantes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BuscarMaterias.aspx.cs">
+      <DependentUpon>BuscarMaterias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarMaterias.aspx.designer.cs">
+      <DependentUpon>BuscarMaterias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CrearEstudiante.aspx.cs">
       <DependentUpon>CrearEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CrearEstudiante.aspx.designer.cs">
       <DependentUpon>CrearEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearMaterias.aspx.cs">
+      <DependentUpon>CrearMaterias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearMaterias.aspx.designer.cs">
+      <DependentUpon>CrearMaterias.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarEncargado.aspx.cs">
       <DependentUpon>EditarEncargado.aspx</DependentUpon>
@@ -214,6 +231,13 @@
     </Compile>
     <Compile Include="EditarEstudiante.aspx.designer.cs">
       <DependentUpon>EditarEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarMaterias.aspx.cs">
+      <DependentUpon>EditarMaterias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarMaterias.aspx.designer.cs">
+      <DependentUpon>EditarMaterias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

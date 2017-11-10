@@ -106,7 +106,7 @@ namespace ES.UI
 
         protected void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
