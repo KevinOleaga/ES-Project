@@ -66,7 +66,8 @@ namespace ES.UI
                     mate = new MMaterias();
                     Materias materia = new Materias
                     {
-                        Nombre = txtNombre.Text
+                        Nombre = txtNombre.Text,
+                        IdMateria= Convert.ToInt32( txtIdMateria.Text)
                     };
                     mate.ActualizarMaterias(materia);
                     mensaje.Visible = true;
