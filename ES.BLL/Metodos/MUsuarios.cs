@@ -1,43 +1,129 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ES.BLL.Interfaces;
+﻿using ES.BLL.Interfaces;
 using ES.DATA;
+
 namespace ES.BLL.Metodos
 {
     public class MUsuarios : IUsuarios
     {
-
-        // PRUEBA
-
-
-
-        private DAL.Interfaces.IUsuarios usu;
+        private DAL.Interfaces.IUsuarios _usu;
         public MUsuarios()
         {
-            usu = new DAL.Metodos.MUsuarios();
+            _usu = new DAL.Metodos.MUsuarios();
         }
-        public void ActualizarUsuario(Usuarios usuarios)
+
+        public bool Login_01(string Usuario)
         {
-            usu.ActualizarUsuario(usuarios);
+            return _usu.Login_01(Usuario);
         }
-        public Usuarios BuscarUsuario(string usuario)
+
+        public bool Login_02(string Usuario, string Password)
         {
-            return usu.BuscarUsuario(usuario);
+            return _usu.Login_02(Usuario, Password);
         }
-        public void EliminarUsuario(string usuario)
+
+        public bool CuentaBloqueada(string Usuario)
         {
-            usu.EliminarUsuario(usuario);
+            return _usu.CuentaBloqueada(Usuario);
         }
-        public void InsertarUsuario(Usuarios usuarios)
+
+        public bool CuentaDesactivada(string Usuario)
         {
-            usu.InsertarUsuario(usuarios);
+            return _usu.CuentaDesactivada(Usuario);
         }
-        public List<Usuarios> ListaUsuarios()
+
+        public void EliminarIntentos(string Usuario)
         {
-            return usu.ListaUsuarios();
+            _usu.EliminarIntentos(Usuario);
+        }
+
+        public void CrearIntentoFallido(string Usuario)
+        {
+            _usu.CrearIntentoFallido(Usuario);
+        }
+
+        public int ObtenerIntentosFallidos(string Usuario)
+        {
+            return _usu.ObtenerIntentosFallidos(Usuario);
+        }
+
+        public void BloquearCuenta(string Usuario)
+        {
+            _usu.BloquearCuenta(Usuario);
+        }
+
+        public bool Existe(string Usuario)
+        {
+            return _usu.Existe(Usuario);
+        }
+
+        public string ObtenerEmail(string Usuario)
+        {
+            return _usu.ObtenerEmail(Usuario);
+        }
+
+        public void RestaurarPassword(string Email, string Body, string Usuario)
+        {
+            _usu.RestaurarPassword(Email, Body, Usuario);
+        }
+
+        public string ActualizarCodigo(string Usuario)
+        {
+            return _usu.ActualizarCodigo(Usuario);
+        }
+
+        public string CrearCodigo()
+        {
+            return _usu.CrearCodigo();
+        }
+
+        public bool VerificarCodigo(string Usuario, string SecretCode)
+        {
+            return _usu.VerificarCodigo(Usuario, SecretCode);
+        }
+
+        public void ResetCodigo(string Usuario)
+        {
+            _usu.ResetCodigo(Usuario);
+        }
+
+        public void ActualizarPassword(string Usuario, string Password)
+        {
+            _usu.ActualizarPassword(Usuario, Password);
+        }
+
+        public void ActivarCuenta(string Usuario)
+        {
+            _usu.ActivarCuenta(Usuario);
+        }
+
+        public Usuarios[] ObtenerInfo(string Usuario)
+        {
+            return _usu.ObtenerInfo(Usuario);
+        }
+
+        public Roles[] ObtenerRoles()
+        {
+            return _usu.ObtenerRoles();
+        }
+
+        public Usuarios[] ObtenerInfoGeneral()
+        {
+            return _usu.ObtenerInfoGeneral();
+        }
+
+        public int TotalUsuarios()
+        {
+            return _usu.TotalUsuarios();
+        }
+
+        public string ObtenerRol(int ID_ROL)
+        {
+            return _usu.ObtenerRol(ID_ROL);
+        }
+
+        public void CrearUsuario(Usuarios usuario)
+        {
+            _usu.CrearUsuario(usuario);
         }
     }
 }

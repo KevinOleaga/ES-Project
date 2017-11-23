@@ -1,21 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ES.DATA;
+﻿using ES.DATA;
 namespace ES.BLL.Interfaces
 {
-   public interface IUsuarios
+    public interface IUsuarios
     {
-        List<Usuarios> ListaUsuarios();
-        // Select por PK
-        Usuarios BuscarUsuario(string usuario);
-        // Insert
-        void InsertarUsuario(Usuarios usuarios);
-        // Update
-        void ActualizarUsuario(Usuarios usuarios);
-        // Delete
-        void EliminarUsuario(string usuario);
+        bool Login_01(string Usuario);
+
+        bool Login_02(string Usuario, string Password);
+
+        bool CuentaBloqueada(string Usuario);
+
+        bool CuentaDesactivada(string Usuario);
+
+        void EliminarIntentos(string Usuario);
+
+        void CrearIntentoFallido(string Usuario);
+
+        int ObtenerIntentosFallidos(string Usuario);
+
+        void BloquearCuenta(string Usuario);
+
+        bool Existe(string Usuario);
+
+        string ObtenerEmail(string Usuario);
+
+        void RestaurarPassword(string Email, string Body, string Usuario);
+
+        string ActualizarCodigo(string Usuario);
+
+        string CrearCodigo();
+
+        bool VerificarCodigo(string Usuario, string SecretCode);
+
+        void ResetCodigo(string Usuario);
+
+        void ActualizarPassword(string Usuario, string Password);
+
+        void ActivarCuenta(string Usuario);
+
+        Usuarios[] ObtenerInfo(string Usuario);
+
+        Roles[] ObtenerRoles();
+
+        Usuarios[] ObtenerInfoGeneral();
+
+        int TotalUsuarios();
+
+        string ObtenerRol(int ID_ROL);
+
+        void CrearUsuario(Usuarios usuario);
     }
 }

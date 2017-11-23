@@ -66,6 +66,7 @@
     <Compile Include="Interfaces\IGrupo.cs" />
     <Compile Include="Interfaces\IGrupo_Alumnos.cs" />
     <Compile Include="Interfaces\IGrupo_Profesor.cs" />
+    <Compile Include="Interfaces\IHerramientas.cs" />
     <Compile Include="Interfaces\IMaterias.cs" />
     <Compile Include="Interfaces\IProfesor.cs" />
     <Compile Include="Interfaces\IRoles.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Metodos\MGrupo.cs" />
     <Compile Include="Metodos\MGrupo_Alumnos.cs" />
     <Compile Include="Metodos\MGrupo_Profesor.cs" />
+    <Compile Include="Metodos\MHerramientas.cs" />
     <Compile Include="Metodos\MMaterias.cs" />
     <Compile Include="Metodos\MProfesor.cs" />
     <Compile Include="Metodos\Mroles.cs" />

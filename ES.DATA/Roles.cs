@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ServiceStack.DataAnnotations;
-
-namespace ES.DATA
+﻿namespace ES.DATA
 {
     public class Roles
     {
-        [AutoIncrement]
-        public int IdRol { get; set; }
+        public int ID_ROL { get; set; }
 
-        public string Rol { get; set; }
-
+        public string NOMBRE { get; set; }
     }
 }
