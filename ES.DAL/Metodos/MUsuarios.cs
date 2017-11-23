@@ -314,6 +314,7 @@ namespace ES.DAL.Metodos
             }
         }
         
+        // METODO DE EJEMPLO
         public Usuarios[] ObtenerInfo(string Usuario)
         {
             Usuarios[] res = { };
